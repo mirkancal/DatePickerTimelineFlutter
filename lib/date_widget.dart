@@ -47,7 +47,7 @@ class DateWidget extends StatelessWidget {
               Text(new DateFormat("MMM", locale).format(date).toUpperCase(), // Month
                   style: monthTextStyle),
               Text(date.day.toString(), // Date
-                  style: dateTextStyle),
+                  style: dateTextStyle, maxLines: 1),
               Text(new DateFormat("E", locale).format(date).toUpperCase(), // WeekDay
                   style: dayTextStyle)
             ],
